@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'test';
+
+.fatty{
+  width: percentage(6/7);
+  height: $test;
+}
+
