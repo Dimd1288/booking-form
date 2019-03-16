@@ -1,0 +1,19 @@
+@font-face{
+    font-family:'Noto Serif';
+    src:url('../fonts/NotoSerifRegular.ttf')format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family:'PT Sans';
+    src:url('../fonts/PTSansRegular.ttf')format('truetype');
+    font-weight: 400;
+}
+
+@mixin serif {
+    font-family:'Noto Serif', sans-serif;
+}
+
+@mixin sans {
+    font-family: 'PT Sans', sans-serif;
+}

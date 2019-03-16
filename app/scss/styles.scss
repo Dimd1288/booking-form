@@ -1,8 +1,48 @@
-@import 'variables';
-@import 'test';
+@import 'fonts';
 
-.fatty{
-  width: percentage(6/7);
-  height: $test;
+
+.booking-form
+{
+  &__container
+  {
+    display:flex; 
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 370px;
+   
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+  }
+  &__title
+  {
+    display:flex;
+    justify-content: center;
+   }
+  &__item_content
+  {
+    border: 5px solid #f2ebd2;
+    padding: 50px; 
+    padding-top: 0;
+    border-top:none;
+    height:350px;
+    background: #ffffff;
+  }
 }
 
+.main-container
+{
+  display: flex;
+  background: url('images/oriental.png');
+  width:100%;
+  flex-direction: column;
+  height: 100vh;
+}
