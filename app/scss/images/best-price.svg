@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62" width="62" height="62">
+	<defs>
+		<image width="62" height="62" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAMAAABEH1h2AAAAAXNSR0IB2cksfwAAAJZQTFRFAAAA0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV0xUV4mNj////9tDQ/O/v5XNz6IKC31NT6pKS3ERE1iUl8LGx7aGh2TQ088HB+eDgPR21YgAAADJ0Uk5TAAqmWSEg0P9I/r5cCUHsDuLxrPyVCBMHPmz78ODysQQ7gOX////////////////////5SoW5AAACaklEQVR4nKWXiZaCMAxFUdQo7vvu6BAUsbL8/89NuqiA4FD7jkcscmnaJmlqWZ9Uq9drHx8olt0Ql2YLoNUUPxt2dboNHafbs/oDIA36Vq/rdKBdlR6OODaeTEFoOhnzy2hYEZ9BoWb/cfPFkr5XxTTAiv5cLual+Bpgs93ty/D9brsBWJfihzIwrUMZ/VPab8aGnxL8WIUGOJbgp2r4qdDy4+m3Gv57Oubsn68Plcb90P6wTq/fQoeVWqTwpT6+TFu/0aU3mcFvdfFtBt/p4rs0vdKad6796gkPSyL0s2Yq/tujb2jKHyL/2I+miyRP5wU8/zU6T9yFsw7eEQnVUa2LwH304Yo+BhDgjT4u+gzvEJJlAUSxuCg5Yuxd1fLxRjgjA4Izy+OkEFmIt9sL7wq8N5atACNuPCFJyDCmx1O4zycmyuDjnpz6iWzez8DxG4Y0CjLWS+ERhvReljF+Ium+zOfsHAqcXpMoa174lSCP8LP36n3a53RT7CUQocck7qoHBC7Fpy6hufEyYx/Q/lVr5dfDpSmsplbNqufvBbRyVVV/x3VULzC+usj4x9R9oUEztXDakgv3dBtdKbd5OK1SIFyfvAcxjri/kuOQyyC5YlbKabtQhAcJA+77Eiclb7EsQ8YpxHl/GDPhdD43BZM8LgL2mS6yuOxM9X7BC3hvvYt0YUMhHuD1hfvoRgWJyC5IlTJM7ozH5kXh1IiDvPGjdmmiDu9vt/KavQo1o23CeJMy3SLNNmjD8sCwODEsjSyzwkzKpCy0jItSw5LYsCA3PQ4YHkaUvj0KKRkexAyPgaaH0Kf+PQL/AVYFhiJb4N5GAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Card 2">
+		<use id="Лучшая цена" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	</g>
+</svg>
