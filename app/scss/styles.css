@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Noto Serif';
   src: url("../fonts/NotoSerifRegular.ttf") format("truetype");
-  font-weight: 400;
 }
 
 @font-face {
@@ -45,6 +44,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 42px;
+  color: #70563d;
+  font-family: 'Noto Serif', sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 
 .booking-form__item_content {

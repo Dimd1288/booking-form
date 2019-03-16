@@ -26,6 +26,13 @@
   {
     display:flex;
     justify-content: center;
+    
+  font-size: 42px;
+  color: #70563d;
+  @include serif;
+
+  text-align: center;
+
    }
   &__item_content
   {
