@@ -108,13 +108,13 @@
 .main-container
 {
   display: flex;
-  background: url('images/oriental.png');
+  background: url('../img/oriental.png');
   flex-direction: column;
   min-height:100vh;
   
 }
 
-.best-price
+.booking-form__item:nth-child(2):hover .best-price
 {
   content:'';
   width: 65px;
@@ -122,6 +122,11 @@
   position:absolute;
   top: 15px;
   left: 15px;
-  background: url('images/best-price.svg') 50% 50%;
+  background: url('../img/best-price.svg');
+  
 }
   
+.active-item
+{
+  border: 5px solid red;
+}
