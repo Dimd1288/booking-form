@@ -33,20 +33,22 @@ roomtypeCard.on('click', function(){
 $(document).ready(function () {
 	$('.booking-form__item_submit').click(function () {
         event.preventDefault();
-		$(this).parent().find("*").hasClass("item-active") || $(this).parents('.booking-form__item').one("mouseleave", function () {
-			$(this).find("*").addClass("item-active"),
-			$(this).children('.booking-form__item_photo').addClass("grayscale"),
+		$(this).parents('.booking-form__item').hasClass("item-active") || $(this).parents('.booking-form__item').one("mouseleave", function () {
+			$(this).addClass("item-active"),
+            $(this).children('.booking-form__item_photo').addClass("grayscale"),
+       
 			$(this).find('.booking-form__item_photo').gray(),
-			$(this).children(".grayscale").gray(),
+		
 			$(this).find('.booking-form__item_submit').text("Подробнее"),
 			$(this).addClass("item-active")
 		})
 	}),
 	roomtypeCard.click(function () {
-		$(this).find("*").hasClass("item-active") && ($(this).find("*").removeClass("item-active"), 
-		$(this).children(".booking-form__item_photo").removeClass("grayscale"), 
+		$(this).hasClass("item-active") && ($(this).removeClass("item-active"), 
+        $(this).children(".booking-form__item_photo").removeClass("grayscale"), 
+        $(this).removeClass("grayscale"),
 		$(this).children(".grayscale").toggleClass("grayscale-off"), 
 		$(this).find(".booking-form__item_submit").text("Забронировать"), 
-		$(this).removeClass("item-active"))
+		$(this).parent().find("*").removeClass("item-active"))
 	})
 });
