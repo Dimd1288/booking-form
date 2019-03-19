@@ -1,16 +1,15 @@
 @import 'fonts';
 
 
-.booking-form
-{
-  &__container
-  {
-    display:flex; 
+.booking-form {
+  &__container {
+    display: flex;
     max-width: 100%;
     margin: 0 auto;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -20,173 +19,130 @@
     margin-right: 30px;
     margin-bottom: 20px;
   }
-  &__item:last-child
-  {
-      margin-right:0;
+
+  &__item:last-child {
+    margin-right: 0;
   }
- 
-  &__title
-  {
-    display:flex;
-    margin:0 auto;
-    
+
+  &__title {
+    display: flex;
+    margin: 0 auto;
+
     font-size: 42px;
     text-transform: uppercase;
-    width:370px;
+    width: 370px;
     color: #70563d;
     @include serif;
     margin-top: 110px;
     margin-bottom: 80px;
 
     text-align: center;
-   }
-  &__item_content
-  {
-    display:flex;
+  }
+
+  &__item_content {
+    display: flex;
     flex-direction: column;
     border: 5px solid #f2ebd2;
-    padding: 20px; 
+    padding: 20px;
     padding-top: 0;
-    border-top:none;
-    height:350px;
+    border-top: none;
+    height: 350px;
     background: #ffffff;
   }
-  &__item
-  {
-  &_description
-    {
+
+  &__item {
+    &_description {
       font-size: 16px;
       line-height: 24px;
       color: #1e1e1e;
       @include sans;
       text-align: center;
       max-width: 300px;
-      margin:0 auto;
-      margin-bottom:30px;
+      margin: 0 auto;
+      margin-bottom: 30px;
     }
-    &_title
-    {
+
+    &_title {
       font-size: 28px;
       color: #70563d;
-      @include serif;  
+      @include serif;
       text-align: center;
-      min-height:70px;
-      margin-bottom:30px;
+      min-height: 70px;
+      margin-bottom: 30px;
     }
-    &_price
-    {
+
+    &_price {
       font-size: 18px;
       color: #4b4b4b;
-      @include serif;  
+      @include serif;
       text-align: center;
-      margin-bottom:30px;
+      margin-bottom: 30px;
     }
-    &_price-amount
-    {
+
+    &_price-amount:hover {
       color: #9e8554;
+      cursor: pointer;
     }
-    &_submit
-    {
-      
+
+    &_submit {
+
       width: 230px;
       height: 50px;
       margin: 0 auto;
       text-decoration: none;
       background-color: #775a24;
-      color:white;
+      color: white;
       text-align: center;
       line-height: 50px;
       @include sans;
     }
-    
+
+  }
+  &__item:hover &__item_content
+  {
+    border:none;
   }
 }
 
-.main-container
-{
+.main-container {
   display: flex;
   background: url('../img/oriental.png');
   flex-direction: column;
-  min-height:100vh;
-  
+  min-height: 100vh;
+
 }
 
-.booking-form__item:nth-child(2):hover .best-price
-{
-  content:'';
+.booking-form__item:nth-child(2):hover .best-price {
+  content: '';
   width: 65px;
   height: 65px;
-  position:absolute;
+  position: absolute;
   top: 15px;
   left: 15px;
   background: url('../img/best-price.svg') no-repeat;
-  
+
 }
-  
-.active-item
-{
+
+.active-item {
   position: relative;
   background-color: white;
   filter: grayscale(100%) opacity(0.8);
-  
+
 }
 
-.item-active .booking-form__item_submit
-{
-  background-color: black;
+.item-active .booking-form__item_submit {
+  background-color: gray;
 }
 
-/*! Gray v1.6.0 (https://github.com/karlhorky/gray) | MIT */
-.grayscale {
-  /* Firefox 10-34 */
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
-
-  /*
-    Chrome 19+,
-    Safari 6+,
-    Safari 6+ iOS,
-    Opera 15+
-  */
-  -webkit-filter: grayscale(1);
-
-  /* Firefox 35+ */
-  filter: grayscale(1);
-
-  /* IE 6-9 */
-  filter: gray;
+.item-active::after {
+  content: '';
+  width: 370px;
+  height: 610px;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
 }
 
-.grayscale.grayscale-fade {
-  transition: filter .5s;
-}
 
-/* Webkit hack until filter is unprefixed */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .grayscale.grayscale-fade {
-    -webkit-transition: -webkit-filter .5s;
-    transition:         -webkit-filter .5s;
-  }
-}
-
-.grayscale.grayscale-off,
-.grayscale.grayscale-fade:hover {
-  -webkit-filter: grayscale(0);
-  filter:         grayscale(0);
-}
-
-/* Background element */
-.grayscale.grayscale-replaced {
-  -webkit-filter: none;
-  filter:         none;
-}
-
-.grayscale.grayscale-replaced > svg {
-  -webkit-transition: opacity .5s ease;
-  transition:         opacity .5s ease;
-  opacity: 1;
-}
-
-.grayscale.grayscale-replaced.grayscale-off > svg,
-.grayscale.grayscale-replaced.grayscale-fade:hover > svg {
-  opacity: 0;
-}
+@import 'grayscale';

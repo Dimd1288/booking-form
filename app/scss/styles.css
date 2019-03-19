@@ -105,8 +105,9 @@
   margin-bottom: 30px;
 }
 
-.booking-form__item_price-amount {
+.booking-form__item_price-amount:hover {
   color: #9e8554;
+  cursor: pointer;
 }
 
 .booking-form__item_submit {
@@ -120,6 +121,10 @@
   line-height: 50px;
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
+}
+
+.booking-form__item:hover .booking-form__item_content {
+  border: none;
 }
 
 .main-container {
@@ -152,7 +157,17 @@
 }
 
 .item-active .booking-form__item_submit {
-  background-color: black;
+  background-color: gray;
+}
+
+.item-active::after {
+  content: '';
+  width: 370px;
+  height: 610px;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
 }
 
 /*! Gray v1.6.0 (https://github.com/karlhorky/gray) | MIT */
