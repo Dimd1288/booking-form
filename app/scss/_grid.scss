@@ -1,0 +1,86 @@
+@media(max-width: 830px)
+{
+
+    .booking-form
+    {
+        &__container
+        {
+          
+            max-width: 400px;
+            
+        }
+        &__item
+        {
+            margin: 15px auto;
+        }
+        &__item:last-child
+        {
+            margin:15px;
+        }
+    }
+    
+}
+
+@media(max-width: 1187px)
+{
+    .booking-form
+    {
+        &__container
+        {
+            display: flex;
+            max-width: 820px;
+        }
+       
+    }
+    
+}
+
+@media(max-width: 410px)
+{
+    .booking-form
+    {
+        &__container
+        {
+            max-width: 300px;
+            
+        }
+        &__item {
+            &_title{
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            &_photo
+            {
+                max-width:280px;
+                
+                
+            }
+            justify-content: center;
+            
+            box-sizing: border-box;
+            max-width: 280px;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            
+          }
+        &__title
+          {
+              max-width: 280px;
+              margin: 15px auto;
+              font-size: 30px;
+          }
+    }
+    .item-active::after {
+        content: '';
+        width:280px;
+        max-height: 550px;
+        background-color: white;
+        opacity: 0.6;
+        position: absolute;
+        
+        top: 0;
+      }
+}
+
+

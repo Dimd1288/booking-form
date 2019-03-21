@@ -48,7 +48,9 @@ $(document).ready(function () {
             $(this).children('.grayscale').toggleClass("grayscale-off"), 
             $(this).find('.booking-form__item_photo').removeClass('grayscale'),
             $(this).find('.booking-form__item_photo').removeClass('grayscale-off'),
-            $(this).find(".booking-form__item_submit").text("Забронировать") 
+            $(this).find(".booking-form__item_submit").text("Забронировать"), 
+            $(this).unbind('mouseleave')
         }})
+       
 });
 

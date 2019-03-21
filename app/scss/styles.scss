@@ -1,6 +1,7 @@
 @import 'fonts';
 
 
+
 .booking-form {
   &__container {
     display: flex;
@@ -130,19 +131,32 @@
 
 }
 
-.item-active .booking-form__item_submit {
-  background-color: gray;
+.item-active .booking-form {
+  &__item_submit
+  {
+    background-color: gray;
+  }
+  &__item_title
+  {
+    color:gray;
+  }
+  &__item_content
+  {
+    border-color:#d8d8d8;
+  }
 }
 
 .item-active::after {
   content: '';
-  width: 370px;
-  height: 610px;
+  width:370px;
+  height: 605px;
   background-color: white;
   opacity: 0.6;
   position: absolute;
+  
   top: 0;
 }
 
 
 @import 'grayscale';
+@import 'grid';
